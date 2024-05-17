@@ -112,10 +112,9 @@
   font-family: "League Spartan";
   font-size: 18px;
   font-weight: 700;
-  line-height: 25px;
   width: 252px;
   height: 72px;
-  flex-shrink: 0;
+  border: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -185,7 +184,6 @@
   font-weight: 700;
   font-size: 230px;
   line-height: 80%;
-  letter-spacing: -0.02em;
   color: #eeeff4;
 }
 .promo .promo1 .promo_min1 {
@@ -406,8 +404,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
   margin-right: -120px;
   color: #FFF;
   font-family: "League Spartan";
@@ -484,27 +480,23 @@
   .info .info3 .miin h3 {
     margin-top: 200px;
   }
+  .footer {
+    flex-grow: 1;
+    margin: 200px 0 0;
+    padding: 0;
+  }
   .footer .bg-grey {
     max-width: 612px;
-    height: 120px;
+    gap: 40px;
   }
-  .footer .bg-grey .footer1 {
-    width: 120px;
-    height: 120px;
+  .footer .bg-grey .footer-nav {
+    gap: 40px;
   }
-  .footer .bg-grey .footer1 img {
-    width: 58px;
-    height: 24px;
-  }
-  .footer .bg-grey {
-    width: 612px;
-    height: 120px;
-  }
-  .footer .footer-nav .footer1 {
+  .footer .bg-grey .footer-nav .footer1 {
     max-width: 120px;
     height: 120px;
   }
-  .footer .footer-nav .footer1 img {
+  .footer .bg-grey .footer-nav .footer1 img {
     width: 58px;
     height: 24px;
   }
@@ -573,45 +565,42 @@
   .info .info3 .miin h3 {
     margin-top: -43px;
   }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .footer .bg-grey {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 370px;
-    height: 444px;
-  }
-  .footer .bg-grey .footer-nav {
-    display: flex;
-    flex-direction: column;
-    max-width: 370px;
-    height: 444px;
-  }
-  .footer .bg-grey .footer2 {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .footer3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0px;
-  }
   .small {
     display: flex;
     flex-direction: column;
   }
   .small button {
-    transform: translatey(970px);
-    margin: 0 auto;
-    width: 300px;
-    height: 72px;
+    display: none;
+  }
+  .see-all-2 {
+    display: flex;
   }
   .promo .promo_min {
     display: none;
+  }
+  .footer {
+    flex-direction: column;
+    margin-top: 255;
+  }
+  .footer .bg-grey {
+    flex-direction: column;
+    margin-right: 0;
+    padding: 0;
+  }
+  .footer .bg-grey .footer-nav {
+    max-width: 600px;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 151px;
+  }
+  .footer .bg-grey .footer-nav .footer1 {
+    transform: translateY(-55px);
+  }
+  .footer .bg-grey .footer-nav .footer2 {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer .footer3 {
+    margin: -121px auto 48px;
   }
 }/*# sourceMappingURL=style.css.map */
